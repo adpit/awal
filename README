@@ -39,3 +39,31 @@
 3. klik widget setting atau tambahkan setting di ahkir url https://github.com/adpit/awal.git/settings
 
 4. scrool ke bawah bagian Danger Zone -> Delete this repository -> masukan nama repo "awal" untuk apply penghapusan
+
+# cara upload / update file ke repository pada github.com
+
+1. sama seperti cara membuat repository beserta filenya, kamu dapat membuat folder baru atau file baru, atau file yang di modifikasi
+
+2. tentunya kamu harus berada dalam folder git yang sudah kamu init sebelumnya, jika ikuti contoh ini maka kamu perlu masuk ke folder 
+
+   cd folder-utama/awal (selanjutnya disebut git1)
+
+3. yang perlu di ingat adalah setiap menambah(folder/file) atau mengupdate(file) kamu harus jalankan perintah ini, folder atau file sama mengunakan :git add"
+
+   git add FOLDER-BARU atau git add FOLDER-BARU/SUB1
+
+4. setelah kamu git add, pastikan kamu commit dengan perintah 
+
+   git commit -m "tulisakan judul perubahan yang kamu lakukan, yang mudah kamu ingat dan unik" 
+
+5. kamu pastinya mau dong perubahan yang ada di pc kamu di simpan dalam github, baik itu sebagai catatan atau publikasi, lakukan perintah ini
+   
+   git push origin master 
+
+   pada perintah ini kamu akan diminta memasukan user dan password account github.com kamu tanpa memasukan nama reponya, karena di awal sudah dilakukan remote  
+
+6. selanjutnya periksa repository kamu yang baru 
+   
+BONUS. kamu juga bisa mereview apa saja perubahan atau pembaharuan yang kamu lakukan pada folder git1 
+   
+       git status (kamu bisa add file yang kamu perlukan agar dapat masuk dala commit kamu nanti atau tidak perlu di add sama sekali)
