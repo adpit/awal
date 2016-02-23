@@ -1,0 +1,41 @@
+# cara membuat repository github dan setting key public PC kita agar dapat upload ke GitHub.com
+
+1. login ke website GitHub.com 
+
+2. pilih yourprofile -> dan buat new repository, kita namakan awal yang nantinya menjadi "https://github.com/adpit/awal.git"
+
+3. (sebelumnya upload dulu key public pc nya)
+
+4. dari PC buat folder baru dan (subfolder) agar mudah teroganisir, dan file baru 
+
+         mkdir folder-utama
+	 mkdir  folder-utama/awal
+         git init
+         touch README
+         git add README 
+         git commit -m "hello github"
+         git log 
+         git remote add origin https://github.com/adpit/awal.git
+
+5. selamat anda telah selesai setup repository anda ke github
+
+# setting key public PC kita agar dapat upload ke GitHub.com, tanpa masukan password lagi 
+
+1. login ke website GitHub.com
+
+2. pilih yourprofile -> dan buat new repository
+
+3. sebelumnya tambahkan key public yang ada di pc(ssh-keygen), jika linux maka ada di /home/USER/.ssh/id_rsa.pub
+
+4. tambahkan key public tersebut pada website GitHub.com -> setting ->  SSH keys "https://github.com/settings/ssh"
+
+
+# cara hapus repository di GitHub.com
+
+1. login ke website GitHub.com
+
+2. akses repo yang kita akan hapus contoh https://github.com/adpit/awal.git
+
+3. klik widget setting atau tambahkan setting di ahkir url https://github.com/adpit/awal.git/settings
+
+4. scrool ke bawah bagian Danger Zone -> Delete this repository -> masukan nama repo "awal" untuk apply penghapusan
